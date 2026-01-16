@@ -1,0 +1,22 @@
+# FastAPI and server
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+
+# MongoDB async driver
+motor==3.3.2
+pymongo==4.6.1
+
+# Password hashing (Render SAFE)
+passlib==1.7.4
+bcrypt==4.0.1
+
+# JWT
+PyJWT==2.8.0
+
+# Validation
+pydantic[email]==2.5.3
+email-validator==2.1.0
+
+# Environment variables
+python-dotenv==1.0.1
+typing-extensions>=4.9.0

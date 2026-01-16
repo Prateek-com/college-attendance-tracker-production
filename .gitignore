@@ -1,0 +1,56 @@
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ======================
+# Node / Frontend
+# ======================
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ======================
+# Editor directories and files
+# ======================
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ======================
+# Backend (FastAPI / Python)
+# ======================
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+backend/venv/
+.env/
+backend/.env
+
+# Python build / test
+.pytest_cache/
+.mypy_cache/
+
+# ======================
+# OS junk
+# ======================
+.DS_Store
