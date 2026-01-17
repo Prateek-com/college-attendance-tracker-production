@@ -7,15 +7,15 @@ Works for:
 - Render free server
 """
 
-import os
-from motor.motor_asyncio import AsyncIOMotorClient
-from dotenv import load_dotenv
 
-# Load environment variables (.env for local, Render ENV for server)
+from dotenv import load_dotenv
 load_dotenv()
 
+import os
+from motor.motor_asyncio import AsyncIOMotorClient
+
 # MongoDB connection string
-MONGO_URL = os.getenv("MONGODB_URI")
+MONGO_URL = os.getenv("MONGO_URL")
 
 if not MONGO_URL:
     raise RuntimeError("❌ MONGO_URL environment variable not set")
@@ -23,6 +23,7 @@ if not MONGO_URL:
 # Global MongoDB client & database
 client: AsyncIOMotorClient | None = None
 database = None
+
 
 
 async def connect_to_mongo():
